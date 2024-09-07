@@ -43,6 +43,10 @@ public class SpectreConsoleLoggerOptions
         CategoryFormatter = SpectreConsoleLoggerFormatter.DefaultCategoryFormatter;
         FixedIndent = 4;
         GetLogTimeStamp = () => DateTime.Now;
+        ExceptionFormats = ExceptionFormats.ShortenPaths
+            | ExceptionFormats.ShortenTypes
+            | ExceptionFormats.ShortenMethods
+            | ExceptionFormats.ShowLinks;
     }
 
     /// <summary>
@@ -127,6 +131,11 @@ public class SpectreConsoleLoggerOptions
     /// Note that if <see cref="IncludeNewLineBeforeMessage"/>, a new line will still be emitted before the log message.
     /// </remarks>
     public bool SingleLine { get; set; }
+
+    /// <summary>
+    /// Gets or sets exception formats to the output. Default is <c>ShortenPaths | ShortenTypes | ShortenMethods | ShowLinks</c>.
+    /// </summary>
+    public ExceptionFormats ExceptionFormats { get; set; }
 
     /// <summary>
     /// Gets or sets the callback to get the log timestamp. Default is Datetime.Now.

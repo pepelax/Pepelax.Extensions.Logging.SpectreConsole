@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "Debug ExampleApp",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "Build ExampleApp (Debug)",
+            "program": "${workspaceFolder}/src/ExampleApp/bin/Debug/net8.0/ExampleApp.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        }
+    ]
+}

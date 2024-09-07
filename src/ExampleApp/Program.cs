@@ -52,3 +52,33 @@ using (var factory = LoggerFactory.Create(configure =>
     logger.LogInformationMarkup(new EventId(1), "Hello from [red]SpectreConsole[/] with a table:", table);
     logger.LogWarning(new EventId(2), "Hello without markup");
 }
+
+// Example4: Don't add a new line, don't indent after new line, include timestamp, log an exception
+using (var factory = LoggerFactory.Create(configure =>
+           {
+               configure.AddSpectreConsole(new SpectreConsoleLoggerOptions()
+               {
+                   IncludeNewLineBeforeMessage = false,
+                   IndentAfterNewLine = false,
+                   LogException = true,
+                   IncludeTimestamp = true,
+               });
+           }
+       ))
+{
+    try 
+    {
+        var div = 0;
+        var val = 1;
+        var res = val / div;
+    }
+    catch (Exception ex)
+    {
+        var logger = factory.CreateLogger("SampleCategory");
+        logger.LogErrorMarkup(
+            eventId: new EventId(1),
+            exception: ex,
+            message: "Hello from [red]SpectreConsole[/] with an exception:"
+        );
+    }
+}

@@ -79,10 +79,10 @@ internal class SpectreConsoleLogger : ILogger
                 {
                     formattedMessage = messageAndRenderable.Text ?? string.Empty;
 
-                    if (_options.LogException && exception is not null)
-                    {
-                        formattedMessage += $"\n{exception}";
-                    }
+                    // if (_options.LogException && exception is not null)
+                    // {
+                    //     formattedMessage += $"\n{exception}";
+                    // }
                 }
                 else
                 {
@@ -96,10 +96,10 @@ internal class SpectreConsoleLogger : ILogger
             {
                 formattedMessage = formatter(state, exception);
 
-                if (_options.LogException && exception is not null)
-                {
-                    formattedMessage += $"\n{exception}";
-                }
+                // if (_options.LogException && exception is not null)
+                // {
+                //     formattedMessage += $"\n{exception}";
+                // }
             }
 
             if (!string.IsNullOrEmpty(formattedMessage))
@@ -130,6 +130,9 @@ internal class SpectreConsoleLogger : ILogger
 
             if (rawFormattedMessage)
             {
+                if (_options.LogException && exception is not null)
+                    builderForMessage.Append(exception.ToString());
+
                 _console.Markup(builder.ToString());
                 var writer = _options.ConsoleSettings.Out?.Writer ?? System.Console.Out;
                 var message = builderForMessage.ToString();
@@ -145,6 +148,8 @@ internal class SpectreConsoleLogger : ILogger
             else
             {
                 _console.MarkupLine(builder.ToString());
+                if (_options.LogException && exception is not null)
+                    _console.WriteException(exception, _options.ExceptionFormats);
             }
 
             // Flush log

@@ -1,0 +1,49 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "dotnet",
+			"task": "build ${workspaceFolder}/src/ExampleApp/ExampleApp.csproj",
+			"file": "${workspaceFolder}/src/ExampleApp/ExampleApp.csproj",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "Build ExampleApp (Debug)"
+		},
+		{
+            "label": "Build ExampleApp (Release)",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/ExampleApp/ExampleApp.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign",
+                "-c",
+                "Release"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+		{
+            "label": "Build Release",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/Lunet.Extensions.Logging.SpectreConsole/Lunet.Extensions.Logging.SpectreConsole.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign",
+                "-c",
+                "Release"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        }
+	]
+}
