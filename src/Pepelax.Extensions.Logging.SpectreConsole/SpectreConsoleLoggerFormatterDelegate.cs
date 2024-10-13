@@ -5,7 +5,7 @@
 using System.Text;
 using Microsoft.Extensions.Logging;
 
-namespace Lunet.Extensions.Logging.SpectreConsole;
+namespace Pepelax.Extensions.Logging.SpectreConsole;
 
 
 /// <summary>

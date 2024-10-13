@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 using Spectre.Console;
 using Spectre.Console.Rendering;
 
-namespace Lunet.Extensions.Logging.SpectreConsole;
+namespace Pepelax.Extensions.Logging.SpectreConsole;
 
 /// <summary>
 /// ILogger extension methods for common scenarios by adding markup logging.

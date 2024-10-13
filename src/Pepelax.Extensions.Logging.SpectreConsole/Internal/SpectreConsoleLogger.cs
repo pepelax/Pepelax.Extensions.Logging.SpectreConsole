@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using Spectre.Console;
 using Wcwidth;
 
-namespace Lunet.Extensions.Logging.SpectreConsole;
+namespace Pepelax.Extensions.Logging.SpectreConsole;
 
 /// <summary>
 /// Internal implementation of ILogger with Spectre.Console.

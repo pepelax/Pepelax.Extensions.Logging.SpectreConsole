@@ -2,7 +2,7 @@
 // This file is licensed under the BSD-Clause 2 license.
 // See the license.txt file in the project root for more information.
 
-using Lunet.Extensions.Logging.SpectreConsole;
+using Pepelax.Extensions.Logging.SpectreConsole;
 using Microsoft.Extensions.Logging;
 using Spectre.Console;
 
@@ -46,7 +46,7 @@ using (var factory = LoggerFactory.Create(configure =>
     table.AddColumn("Name");
     table.AddColumn("Spectre?");
     table.AddRow("Microsoft.Extensions.Logging.Console", "⛔");
-    table.AddRow("Lunet.Extensions.Logging.SpectreConsole", "✅");
+    table.AddRow("Pepelax.Extensions.Logging.SpectreConsole", "✅");
     
     var logger = factory.CreateLogger("SampleCategory");
     logger.LogInformationMarkup(new EventId(1), "Hello from [red]SpectreConsole[/] with a table:", table);

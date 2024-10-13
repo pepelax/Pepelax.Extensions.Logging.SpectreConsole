@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Lunet.Extensions.Logging.SpectreConsole\Lunet.Extensions.Logging.SpectreConsole.csproj" />
+    <ProjectReference Include="..\Pepelax.Extensions.Logging.SpectreConsole\Pepelax.Extensions.Logging.SpectreConsole.csproj" />
   </ItemGroup>
 
 </Project>

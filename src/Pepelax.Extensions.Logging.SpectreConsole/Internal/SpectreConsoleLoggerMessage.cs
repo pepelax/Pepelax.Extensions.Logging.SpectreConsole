@@ -4,7 +4,7 @@
 
 using Spectre.Console.Rendering;
 
-namespace Lunet.Extensions.Logging.SpectreConsole;
+namespace Pepelax.Extensions.Logging.SpectreConsole;
 
 /// <summary>
 /// Logger message used internally supporting Spectre markup.

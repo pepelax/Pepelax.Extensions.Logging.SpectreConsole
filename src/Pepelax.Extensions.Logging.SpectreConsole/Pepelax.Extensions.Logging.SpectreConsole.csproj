@@ -4,16 +4,16 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<LangVersion>10.0</LangVersion>
+		<LangVersion>12.0</LangVersion>
 		<DefineConstants>$(DefineConstants);WCWIDTH_VISIBILITY_INTERNAL</DefineConstants>
 		<Description>A highly configurable Spectre console logger for Microsoft.Extensions.Logging.</Description>
 		<Copyright>Alexandre Mutel</Copyright>
-		<Authors>Alexandre Mutel</Authors>
+		<Authors>Alexandre Mutel, Pepelax</Authors>
 		<NeutralLanguage>en-US</NeutralLanguage>
 		<PackageTags>spectre;logging</PackageTags>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
 		<PackageIcon>logo.png</PackageIcon>
-		<PackageProjectUrl>https://github.com/lunet-io/Lunet.Extensions.Logging.SpectreConsole</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/pepelax/Pepelax.Extensions.Logging.SpectreConsole</PackageProjectUrl>
 		<PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<NoWarn>$(NoWarn);CS1591</NoWarn>

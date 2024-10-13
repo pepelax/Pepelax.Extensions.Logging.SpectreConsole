@@ -6,7 +6,7 @@ using System.Collections.Concurrent;
 using Microsoft.Extensions.Logging;
 using Spectre.Console;
 
-namespace Lunet.Extensions.Logging.SpectreConsole;
+namespace Pepelax.Extensions.Logging.SpectreConsole;
 
 /// <summary>
 /// An <see cref="ILoggerProvider"/> for Spectre.Console.

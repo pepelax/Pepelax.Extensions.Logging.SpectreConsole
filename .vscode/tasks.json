@@ -33,7 +33,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/src/Lunet.Extensions.Logging.SpectreConsole/Lunet.Extensions.Logging.SpectreConsole.csproj",
+                "${workspaceFolder}/src/Pepelax.Extensions.Logging.SpectreConsole/Pepelax.Extensions.Logging.SpectreConsole.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign",
                 "-c",

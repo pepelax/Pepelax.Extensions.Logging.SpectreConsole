@@ -1,8 +1,8 @@
 [msbuild]
-project = "Lunet.Extensions.Logging.SpectreConsole.sln"
+project = "Pepelax.Extensions.Logging.SpectreConsole.sln"
 [github]
-user = "lunet-io"
-repo = "Lunet.Extensions.Logging.SpectreConsole"
+user = "pepelax"
+repo = "Pepelax.Extensions.Logging.SpectreConsole"
 [changelog]
 owners = "xoofx" # Exclude xoofx from changelog mentions
 [coverage]

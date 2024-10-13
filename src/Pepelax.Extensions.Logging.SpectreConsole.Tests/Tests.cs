@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 using NUnit.Framework;
 using Spectre.Console;
 
-namespace Lunet.Extensions.Logging.SpectreConsole.Tests
+namespace Pepelax.Extensions.Logging.SpectreConsole.Tests
 {
     public class Tests
     {

@@ -7,7 +7,7 @@ using System.Text;
 using Microsoft.Extensions.Logging;
 using Spectre.Console;
 
-namespace Lunet.Extensions.Logging.SpectreConsole;
+namespace Pepelax.Extensions.Logging.SpectreConsole;
 
 /// <summary>
 /// Options for <see cref="SpectreConsoleLoggerProvider"/>.
