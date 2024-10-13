@@ -3,6 +3,9 @@
 
 A highly configurable [Spectre.Console](https://github.com/spectreconsole/spectre.console/) logger for `Microsoft.Extensions.Logging`.
 
+Replace "Lunet" to use this fork
+This fork is created mainly to use WriteException method from SpectreConsole to make exceptions more readable
+
 ## Features
 - Highly configurable
 - Simple dependency to `Microsoft.Extensions.Logging`/`7.0.0+` and `Spectre.Console`/`0.47+`
