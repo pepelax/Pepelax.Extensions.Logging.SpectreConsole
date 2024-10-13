@@ -5,6 +5,8 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<LangVersion>12.0</LangVersion>
+		<Version>1.0.0</Version>
+		<PackageId>Pepelax.Extensions.Logging.SpectreConsole</PackageId>
 		<DefineConstants>$(DefineConstants);WCWIDTH_VISIBILITY_INTERNAL</DefineConstants>
 		<Description>A highly configurable Spectre console logger for Microsoft.Extensions.Logging.</Description>
 		<Copyright>Alexandre Mutel</Copyright>
