@@ -42,7 +42,7 @@ public class SpectreConsoleLoggerOptions
         LogLevelFormatter = SpectreConsoleLoggerFormatter.DefaultLogLevelFormatter;
         CategoryFormatter = SpectreConsoleLoggerFormatter.DefaultCategoryFormatter;
         FixedIndent = 4;
-        GetLogTimeStamp = () => DateTime.Now;
+        GetLogTimeStamp = () => DateTime.UtcNow;
         ExceptionFormats = ExceptionFormats.ShortenPaths
             | ExceptionFormats.ShortenTypes
             | ExceptionFormats.ShortenMethods
